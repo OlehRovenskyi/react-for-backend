@@ -7,4 +7,5 @@ git checkout day1
 or
 ```
 https://github.com/OlehRovenskyi/react-for-backend/tree/day1
+https://github.com/OlehRovenskyi/react-for-backend/tree/day2
 ```
