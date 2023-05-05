@@ -6,6 +6,9 @@ import { Clock } from './components/Clock/Clock.jsx';
 import { ReactEvents } from './components/ReactEvents/ReactEvents.jsx';
 import { Counter } from './components/Counter/Counter.jsx';
 import { Todo } from './components/Todo/Todo.jsx';
+import { TodoAsync } from './components/TodoAsync/TodoAsync.jsx';
+import { CounterRedux } from './components/CounterRedux/CounterRedux.jsx';
+import { TodoRedux } from './components/TodoRedux/TodoRedux.jsx';
 
 function Welcome({name, age}) {
   return (
@@ -24,7 +27,11 @@ function App() {
   const age = 30;
   return (
     <>
-      <Todo initialTodos={[{name: 'milk', id:1}, {name: 'bread', id: 2}]}/>
+      <CounterRedux />
+
+      <TodoRedux />
+      {/*<TodoRedux />*/}
+      {/*<Todo initialTodos={[{name: 'milk', id:1}, {name: 'bread', id: 2}]}/>*/}
       {/*<Welcome name="Vic 3" age={age} />*/}
       {/*<Welcome name="Vic 4" age={age} />*/}
       {/*<UserInfo name="Vic" age={age}/>*/}
