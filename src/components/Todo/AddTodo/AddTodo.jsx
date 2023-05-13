@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 export function AddTodo({onAddTodo}) {
   const [todoName, setTodoName] = useState('');
-
   function changeName(event) {
     setTodoName(event.target.value);
   }

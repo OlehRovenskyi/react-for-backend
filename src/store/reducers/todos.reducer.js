@@ -11,7 +11,7 @@ export default function todosReducer(state= initialState, { type, payload }) {
       return { ...state, items: [...state.items, payload] }
 
     case ADD_TODOS:
-      return { ...state, items: [...state.items, ...payload] }
+      return { ...state, items: [...payload] }
 
     case UPDATE_TODO:
       return {

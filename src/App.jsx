@@ -9,6 +9,7 @@ import { Todo } from './components/Todo/Todo.jsx';
 import { TodoAsync } from './components/TodoAsync/TodoAsync.jsx';
 import { CounterRedux } from './components/CounterRedux/CounterRedux.jsx';
 import { TodoRedux } from './components/TodoRedux/TodoRedux.jsx';
+import { Navigation } from './components/Navigation/Navigation.jsx';
 
 function Welcome({name, age}) {
   return (
@@ -27,10 +28,12 @@ function App() {
   const age = 30;
   return (
     <>
-      <CounterRedux />
+      <Navigation />
+      <h1>Hello!</h1>
+      {/*<CounterRedux />*/}
 
-      <TodoRedux />
       {/*<TodoRedux />*/}
+      {/*<TodoRouter />*/}
       {/*<Todo initialTodos={[{name: 'milk', id:1}, {name: 'bread', id: 2}]}/>*/}
       {/*<Welcome name="Vic 3" age={age} />*/}
       {/*<Welcome name="Vic 4" age={age} />*/}
